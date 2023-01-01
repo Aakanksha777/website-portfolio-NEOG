@@ -2,10 +2,11 @@
     margin: 0;
     box-sizing: border-box;
     font-family: cursive;
-    /* background-color: rgb(36, 35, 35); */
-    /* color: aliceblue; */
     color: rgb(194, 150, 69);
 }
+html { 
+    scroll-behavior: smooth
+    }
 
 a {
     display: flex;
@@ -20,8 +21,6 @@ li {
 
 .aTag {
     font-size: 40px;
-    /* gap: 20px; */
-    /* padding: 18px; */
     margin: 20px;
     text-decoration: none;
 }
@@ -79,6 +78,7 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 8em;
 }
 
 .social-media-container {
@@ -164,7 +164,7 @@ h1 {
     margin-inline: auto;
     font-size: 28px;
     margin-block: 1em;
-    padding: 2em;
+    padding: 3em;
     border-left: 2px solid olive;
     border-right: 2px solid olive;
     border-radius: 0.5em;
@@ -207,6 +207,7 @@ h1 {
     margin-block: 1em;
     padding: 1.5em;
 }
+
 
 /* blog------------------------------------------------------- */
 .blog-container {
