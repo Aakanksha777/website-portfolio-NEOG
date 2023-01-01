@@ -5,14 +5,12 @@
     /* background-color: rgb(36, 35, 35); */
     /* color: aliceblue; */
     color: rgb(194, 150, 69);
-    /* text-shadow: 2px 2px 6px rgb(194, 150, 69); */
 }
 
 a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 12vh;
     max-width: 45%;
 }
 
@@ -62,7 +60,7 @@ h1 {
     flex: 1;
 }
 
-.sticky-navbar {
+.sticky {
   position: fixed;
   top: 0;
   width: 100%;
@@ -193,7 +191,6 @@ h1 {
 .p-img {
     width: 80%;
     padding: 1em;
-    /* height: auto; */
 }
 .card-img {
     padding: 0.5em;
@@ -263,7 +260,6 @@ button {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  height: unset;
 }
 
 button:hover {
@@ -280,6 +276,6 @@ button:focus {
 }
 
 .btnLink {
-    height: unset;
+    /* height: unset; */
     max-width: unset;
 }
