@@ -2,11 +2,35 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif, cursive;
-    color: rgb(194, 150, 69);
+    color:whitesmoke;
 }
 html { 
     scroll-behavior: smooth
     }
+
+body{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(./navbarImages/background.jpg);
+    background-size: contain;
+}
+main{
+    padding-top: 78px;
+}
+
+main:not(#main-project-container) {
+    height:100vh;
+}
+h1 {
+    padding: 2em;
+}
+
+h2 {
+    padding: 1em;
+}
+
+.aTag {
+    font-size: 24px;
+    text-decoration: none;
+}
 
 .aTag , .btnLink{
     display: flex;
@@ -19,18 +43,7 @@ li {
     list-style: none;
 }
 
-.aTag {
-    font-size: 24px;
-    text-decoration: none;
-}
 
-body{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(./navbarImages/background.jpg);
-    background-size: contain;
-}
-h1 {
-    padding: 2em;
-}
 /* NAVBAR CONTAINER -----------------------------------------------------------------------------*/
 
 .navbar-container {
@@ -40,8 +53,9 @@ h1 {
 
 .navbar-items{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    padding-right: 40px;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     gap: 15px;
@@ -67,8 +81,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
     width: 100%;
-    padding-top: 87px;
 }
 
 .social-media-container {
@@ -90,20 +104,13 @@ h1 {
 
 /* display-container-------------- */
 .display-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-left: 3px solid rgb(191, 203, 216);
     border-bottom: 3px solid rgb(191, 203, 216);
     border-radius: 0.3em;
-
+    max-width: 75%;
 }
 
 .screen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1;
     font-size: 25px;
     padding: 2em;
     padding-bottom: 1em;
@@ -135,15 +142,19 @@ h1 {
     justify-content: center;
     align-items: center;
     max-width: 75%;
+    height: 100%;
     margin-inline: auto;
     font-size: 28px;
-    margin-block: 1em;
-    padding: 3em;
+}
+.about-border{
+    padding: 1em 3em;
     border-left: 2px solid olive;
     border-right: 2px solid olive;
     border-radius: 0.5em;
 }
-
+#main-project-container{
+    padding-top: 78px;
+}
 .about-languages {
     border-top: 2px solid green;
     border-bottom: 2px solid green;
@@ -193,6 +204,11 @@ h1 {
     margin-inline: auto;
     padding: 2em;
 }
+.show-blog {
+    /* background-color: rgb(164, 184, 126); */
+    padding-block: 2em;
+    padding-inline: 2em;
+}
 .footer-container {
     position: fixed;
     bottom: 0;
@@ -205,7 +221,6 @@ h1 {
     background-color: gray;
     color: aliceblue;
     margin-block: 1.2em;
-
   align-self: center;
   background-color: #fff;
   background-image: none;
@@ -254,6 +269,7 @@ h1 {
     flex-direction: column;
     align-content: center;
     width: 50px;
+    padding-left: 10px;
     height: 100%;
     justify-content: center;
     gap: 15px;

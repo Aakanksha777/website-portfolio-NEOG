@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <title>Blog_1</title>
+</head>
+<body>
+    <div class="blog1-container">
+        <h1>What is Pseudo Classes ?</h1>
+        <p>A pseudo-class is used to define a special state of an element.</p>
+        <p>pseudo-class, it can be attached to any selector with a colon and accepts
+             classes, IDs, and HTML tags as parameters.</p>
+        <p> * Style an element when a user mouses over it</p>
+        <p> * Style visited and unvisited links differently</p>
+        <p> * Style an element when it gets focus</p>
+
+        <h2>There are different pseudo-classes in CSS..</h2>
+        <p>Dynamic pseudo-classes. <i>:link. :visited. :hover. :active. etc</i></p>
+        <p>The target pseudo-classes. :target.</p>
+        <p>The language pseudo-classes. :lang.</p>
+        <p>The UI element states pseudo-classes. :enabled. :disabled. :checked.</p>
+        <p>Structural pseudo-classes. :root. :nth-child. :nth-last-child. etc</p>
+        <p>The negation pseudo-classes. :not.</p>
+
+        <h2>
+           1) : Has ()
+        </h2>
+        <p> The class .selector only gets selected 
+            if it contains the elements passed to it as parameters using the has() pseudo-class:
+        </p>
+        <h4>Example</h4>
+        <p> .selector:has(.class) { ... }</p>
+        <p> .selector:has(#id) { ... }</p>
+        <p>.selector:has(div) { ... }</p>  
+
+        <h2>
+           2) : nth-child()
+         </h2>
+         <p>The :nth-child() CSS pseudo-class matches elements based on their position among a group of siblings.
+         </p>
+         <h4>Example</h4>
+         <p> li:nth-child(-n + 3) {
+            border: 2px solid orange;
+            margin-bottom: 1px;
+        }</p>
+        
+        <p>li:nth-child(even) {
+            background-color: lightyellow;
+        }
+        </p>
+
+        <h2>3) :nth-of-type()</h2>
+        <p>The :nth-of-type() CSS pseudo-class matches elements based on their position among siblings of the same type (tag name).</p>
+        <h4>Example</h4>
+        <p> .selector :nth-of-type(even) {
+            border: 2px solid orange;
+        }
+        </p>
+
+
+        
+        <h2>4) :placeholder-shown</h2>
+        <p>The :placeholder-shown CSS pseudo-class represents any input or textarea element that is currently displaying placeholder text.</p> 
+        <h4>Example</h4>
+        <p> input:placeholder-shown {
+            background-color: ivory;
+            border: 2px solid darkorange;
+            border-radius: 5px;
+        }</p>
+        
+        <h2>5) :where()</h2>
+        <p>The :where() CSS pseudo-class function takes a selector list as its argument, and selects any element that can be selected by one of the selectors in that list.</p>
+        <h4>Example</h4>
+        <p>:where(ol, ul) :where(ol, ul) ol {
+            list-style-type: lower-greek;
+            color: chocolate;
+        }
+        </p>
+      
+
+        <h2>6) :not()</h2>
+        <p>The :not() CSS pseudo-class represents elements that do not match a list of selectors. Since it prevents specific items from being selected, it is known as the negation pseudo-class.</p>
+        <h4>Example</h4>
+        <p>p > :not(strong, b.important) {
+            color: darkmagenta;
+        }</p>
+
+
+    </div>
+</body>
+</html>

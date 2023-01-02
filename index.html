@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <main>
-<!-- Navbar -->
-        <div class="navbar-container sticky">
-            <div class="navbar-items">
-                <a href="#main-home-container" class="aTag">Home</a>
-                <a href="#main-About-container" class="aTag">About</a>
-                <a href="#main-project-container" class="aTag">Projects</a>
-                <a href="#main-blog-container" class="aTag">Blog</a>
-            </div>   
-        </div> 
-<!-- home -->
-        <div class="rest-container"  id="main-home-container">
+  <!-- Navbar -->
+  <nav class="navbar-container sticky">
+    <div class="navbar-items">
+        <a href="#main-home-container" class="aTag">Home</a>
+        <a href="#main-About-container" class="aTag">About</a>
+        <a href="#main-project-container" class="aTag">Projects</a>
+        <a href="#main-blog-container" class="aTag">Blog</a>
+    </div>   
+  </nav> 
+  <!-- home -->
+    <main id="main-home-container">
+        <div class="rest-container">
            <div class="display-container">
             <div class="screen">
                 <div class="intro"> Hi There👋 ! I'm </div>
@@ -41,16 +41,17 @@
 
 <main id="main-About-container">
         <div class="about-container">
-            Meticulous web developer with passion for responsive websites design using HTML & CSS 
-            and Bootstrap and expertise in creating Front-End 
-            web-Apps in React and Vanilla JS.
-            <br>
-            <div class="about-languages">
-                <b>Computer Language : </b> JavascriptES6 | HTML | CSS 
-                <br>
-                <br>
-                <b>Libraries & Tools : </b> ReactJS | VS code | Git | Github
+          <div class="about-border">
+            <div class="about-myself">
+              Meticulous web developer with passion for responsive websites design using HTML & CSS 
+              and Bootstrap and expertise in creating Front-End 
+              web-Apps in React and Vanilla JS.
             </div>
+              <div class="about-languages">
+                  <b>Computer Language : </b> JavascriptES6 | HTML | CSS 
+                  <b>Libraries & Tools : </b> ReactJS | VS code | Git | Github
+              </div>
+          </div>
         </div>
     </main>
 
@@ -228,21 +229,29 @@
 
  <main id="main-blog-container">
         <div class="blog-container">
+          <!-- blog-1  -->
             <div class="show-blog">
-                <h2>DOM Intro : </h2>
-                The Document Object Model (DOM) is a programming interface for web documents. 
-                It represents the page so that programs can change the document structure, style, and content.
-                The DOM represents the document as nodes and objects; that way, 
-                programming languages can interact withthe page.
+                <h2>Not So Famous CSS Selectors But Very Useful</h2>
+                <h3>What is Pseudo Classes ?</h3>
+                <p>A pseudo-class is used to define a special state of an element.</p>
+                <p> * Style an element when a user mouses over it</p>
+                <p> * Style visited and unvisited links differently</p>
+                <p> * Style an element when it gets focus</p>
+                <a href="./blog1.html">Read More</a>
             </div>
-            <button class="read-more-btn">Read More</button>
-            <div class="hide-blog hide">
-                A web page is a document that can be either displayed in the browser window or as the HTML source. 
-                In both cases, it is the same document but the Document Object Model (DOM) representation 
-                allows it to be manipulated. As an object-oriented representation of the web page, it can be modified
-                 with a scripting language such as JavaScript.
-            </div>
-            <button class="close-btn hide">X</button>
+
+             <!-- blog-2 -->
+            <div class="show-blog">
+              <h2>HTTP response status codes</h2>
+              <p>HTTP response status codes indicate whether a specific HTTP request has been successfully completed.
+                 Responses are grouped in five classes:</p>
+                 <p>1. Informational responses (100 – 199)</p>
+                 <p>2. Successful responses (200 – 299)</p>
+                 <p>3. Redirection messages (300 – 399)</p>
+                 <p>4. Client error responses (400 – 499)</p>
+                 <p>5. Server error responses (500 – 599)</p>
+                 <a href="./blog2.html">Read More</a>
+          </div>
 
         </div>
     </main>
