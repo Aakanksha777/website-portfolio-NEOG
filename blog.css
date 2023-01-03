@@ -24,21 +24,11 @@ li {
     font-size: 22px;
 }
 
-.show-blog {
-    /* background-color: rgb(164, 184, 126); */
-    padding-block: 2em;
-    padding-inline: 2em;
-    margin: 1em;
-    border: 1px solid yellowgreen;
-}
-
 .blog-list {
     margin: 2em;
     color: #41403e;
 }
-.readMore {
-    padding: 2em;
-}
+
 .blog-heading {
     font-size: 30px;text-align: left;
 }
