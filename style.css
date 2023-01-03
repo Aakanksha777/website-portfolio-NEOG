@@ -202,7 +202,6 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     max-width: 65%;
     margin-inline: auto;
     padding: 2em;
@@ -220,6 +219,7 @@ li {
 }
 .readMore {
     color: goldenrod;
+    padding-left: 2em;
 }
 
 .footer-container {
