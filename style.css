@@ -23,9 +23,9 @@ h1 {
     padding: 2em;
 }
 
-h2 {
+/* h2 {
     padding: 1em;
-}
+} */
 
 ul {
     padding: 1em;
@@ -204,7 +204,7 @@ li {
     align-items: center;
     max-width: 65%;
     margin-inline: auto;
-    padding: 2em;
+    
 }
 .blog-outer-border {
     border-left: 1px solid white ;
@@ -258,4 +258,9 @@ li {
     height: 100%;
     justify-content: center;
     gap: 15px;
+}
+
+.blog-heading {
+    padding: 1em;
+    text-shadow: 3px 3px 5px red;
 }
